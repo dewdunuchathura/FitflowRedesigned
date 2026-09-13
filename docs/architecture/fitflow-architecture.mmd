@@ -1,0 +1,52 @@
+flowchart TD
+    U([FitFlow User])
+
+    subgraph CLIENT["Flutter Frontend — iOS / Android / Web"]
+        F_AUTH[Auth Module]
+        F_WORKOUT[Workout Module]
+        F_NUTRITION[Nutrition Module]
+        F_SOCIAL[Social Module]
+    end
+
+    subgraph AUTH_SVC["Firebase Authentication"]
+        FA[JWT Token Issuance\nSocial Login\nEmail / Password]
+    end
+
+    subgraph BACKEND["Node.js + NestJS — Main Backend"]
+        GUARD[Auth Guard\nJWT Verification]
+        REST[REST API\nControllers]
+        WS[WebSocket Gateway\nSocket.IO]
+        BL[Business Logic\nServices]
+    end
+
+    subgraph DATA["Data Layer"]
+        PG[(PostgreSQL\nPrimary Database)]
+        REDIS[(Redis\nCache + Rate Limiting)]
+    end
+
+    subgraph AI_SVC["Python + FastAPI — AI Microservice"]
+        AI_API[FastAPI Endpoints]
+        ML[ML Model Inference\nRecommendations]
+    end
+
+    U --> CLIENT
+    CLIENT --> FA
+    FA -->|JWT token| CLIENT
+    CLIENT -->|HTTPS + JWT| GUARD
+    CLIENT <-->|WebSocket WSS| WS
+    GUARD --> REST
+    GUARD --> WS
+    REST --> BL
+    WS --> BL
+    BL --> PG
+    BL --> REDIS
+    BL -->|Internal REST API| AI_API
+    AI_API --> ML
+    ML -->|Recommendations| AI_API
+    AI_API -->|Response| BL
+
+    style CLIENT fill:#e8f4fd,stroke:#2196f3,stroke-width:2px
+    style AUTH_SVC fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style BACKEND fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style DATA fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style AI_SVC fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
