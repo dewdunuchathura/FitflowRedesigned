@@ -34,6 +34,11 @@ build/
 *.ipa
 *.dSYM.zip
 
+# Android release signing — never commit credentials or keystores
+key.properties
+*.jks
+*.keystore
+
 # IDE
 .idea/
 .vscode/

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path 'C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\\\\bin', 'C:\\\\Program Files\\\\Java', 'C:\\\\Program Files\\\\Microsoft' -Filter keytool.exe -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName -First 5\")"
+    ]
+  }
+}

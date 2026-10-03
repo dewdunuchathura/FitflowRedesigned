@@ -1,5 +1,19 @@
+import java.util.Properties
+
+// ── Load release signing properties ──────────────────────────────────────────
+// key.properties is gitignored and must never be committed.
+val keystorePropertiesFile = rootProject.file("key.properties")
+val keystoreProperties = Properties().apply {
+    if (keystorePropertiesFile.exists()) {
+        load(keystorePropertiesFile.inputStream())
+    }
+}
+
 plugins {
     id("com.android.application")
+    // KGP must be applied before the Flutter Gradle Plugin.
+    // android.builtInKotlin=false, so the plugin is applied explicitly here.
+    id("org.jetbrains.kotlin.android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
@@ -15,29 +29,44 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.fitflow.fitflow"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-        // Uses the version code from pubspec.yaml. When using split APKs, 1000 * ABI_VERSION
-        // is added automatically by Flutter. (https://developer.android.com/studio/build/configure-apk-splits#configure-APK-versions)
-        // You can force using the value of versionCode by specifying the `-P force-version-code-ignoring-abi=true`
-        // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
 
+    // ── Release signing ───────────────────────────────────────────────────────
+    signingConfigs {
+        create("release") {
+            keyAlias     = keystoreProperties["keyAlias"]     as? String
+            keyPassword  = keystoreProperties["keyPassword"]  as? String
+            storePassword = keystoreProperties["storePassword"] as? String
+            storeFile    = keystoreProperties["storeFile"]?.let {
+                rootProject.file(it as String)
+            }
+        }
+    }
+
+    // ── Build types ───────────────────────────────────────────────────────────
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            // Use the dedicated release keystore — not the debug keystore.
+            signingConfig = signingConfigs.getByName("release")
+
+            // R8 full-mode minification and resource shrinking.
+            isMinifyEnabled = true
+            isShrinkResources = true
+
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 }
 
+// ── Kotlin compiler options ───────────────────────────────────────────────────
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
