@@ -7,6 +7,6 @@ What's New in FitFlow 1.0.1
 • Build signed with release keystore (R8 minification + resource shrinking)
 • Performance improvements and code obfuscation applied
 
-Have feedback or questions? Contact us at: EMAIL_HERE
+Have feedback or questions? Contact us at: dewdunuc1990@gmail.com
 
 ⚠ Reminder: FitFlow workouts and nutrition recommendations are not medical advice. Consult a healthcare professional before starting any new exercise programme.

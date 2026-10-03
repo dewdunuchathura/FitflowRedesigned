@@ -435,9 +435,9 @@ adb logcat -d *:E > "d:\FITFLOW ASSIGNMENT\FitflowRedesigned\frontend\report-evi
 | `.nojekyll` | `docs/.nojekyll` created |
 | GitHub Pages URL | `https://dewdunuchathura.github.io/FitflowRedesigned/privacy-policy.html` |
 | Effective date | 2026-10-03 |
-| Sections | Who we are; Information collected (account, health/fitness, nutrition, social, device); How we use it; AI processing (not medical advice); Social features (visibility controls, report/block); Storage and security (TLS, Firebase, no data selling); Retention and deletion (30-day deletion); Your rights (GDPR + CCPA); Health regulations (HIPAA note: consumer app); Children (not for under 13/16); Changes; Contact (EMAIL_HERE placeholder) |
+| Sections | Who we are; Information collected (account, health/fitness, nutrition, social, device); How we use it; AI processing (not medical advice); Social features (visibility controls, report/block); Storage and security (TLS, Firebase, no data selling); Retention and deletion (30-day deletion); Your rights (GDPR + CCPA); Health regulations (HIPAA note: consumer app); Children (not for under 13/16); Changes; Contact (dewdunuc1990@gmail.com placeholder) |
 
-**Still required:** Replace EMAIL_HERE with real contact email; enable GitHub Pages (Settings > Pages > main branch, /docs folder).
+**Still required:** Replace dewdunuc1990@gmail.com with real contact email; enable GitHub Pages (Settings > Pages > main branch, /docs folder).
 
 ---
 
@@ -513,7 +513,7 @@ Size increase vs v1.0.1+3 is approximately +0.7 MB per ABI -- from url_launcher 
 |---|---|---|
 | 1 | Feature graphic (1024x500 PNG) | Design and save to store-assets/feature-graphic/feature_graphic.png |
 | 2 | Phone screenshots (6 screens) | Connect emulator; run adb commands from section 15 |
-| 3 | Contact email | Replace EMAIL_HERE in docs/privacy-policy.html and store-assets/text/release_notes.txt |
+| 3 | Contact email | Replace dewdunuc1990@gmail.com in docs/privacy-policy.html and store-assets/text/release_notes.txt |
 | 4 | GitHub Pages | Repo Settings > Pages > Source: main branch, /docs folder |
 | 5 | Testing evidence (meminfo/gfxinfo/logcat) | Connect device; run commands from section 15 |
 | 6 | Internal testing track | Upload app-release.aab to Google Play Console > Internal Testing |
