@@ -1,0 +1,6 @@
+=== git check-ignore -v ===
+frontend/android/.gitignore:12:key.properties	frontend/android/key.properties
+frontend/android/.gitignore:14:**/*.jks	frontend/android/*.jks
+
+=== git ls-files (should be empty) ===
+(empty = not tracked)

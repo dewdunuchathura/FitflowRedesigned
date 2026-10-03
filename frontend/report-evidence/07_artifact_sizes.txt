@@ -1,0 +1,11 @@
+=== Build Artifacts Size Table ===
+Artifact                                                     Bytes       MB
+------------------------------------------------------- ---------- --------
+apk/debug/app-debug.apk                                  150555236 143.58 MB
+apk/release/app-release.apk                               49747796 47.44 MB
+bundle/release/app-release.aab                            46441449 44.29 MB
+flutter-apk/app-arm64-v8a-release.apk                     17445426 16.64 MB
+flutter-apk/app-armeabi-v7a-release.apk                   14804986 14.12 MB
+flutter-apk/app-debug.apk                                150555236 143.58 MB
+flutter-apk/app-release.apk                               49747796 47.44 MB
+flutter-apk/app-x86_64-release.apk                        18880052 18.01 MB

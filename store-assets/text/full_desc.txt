@@ -1,0 +1,41 @@
+FitFlow – Your AI-Powered Fitness Companion
+
+Take control of your fitness journey with FitFlow, the all-in-one app that combines AI-driven workout recommendations, smart nutrition tracking, progress analytics, and a motivating community — all in a clean, easy-to-use interface.
+
+━━ KEY FEATURES ━━
+
+🤖 AI Workout Coach
+FitFlow's AI Workout screen analyses your fitness goals and workout history to generate personalised daily workout plans. From beginner bodyweight routines to intermediate full-body burns, every recommendation is tailored to you. Accept, adjust, or skip — you're always in control.
+
+🏠 Smart Home Dashboard
+Your Daily Flow dashboard gives you an at-a-glance view of today's AI-recommended workout, calorie progress, completed workouts, nutrition score, and your current streak. Everything you need, right on the home screen.
+
+🍎 Nutrition Tracker
+Log meals, track calories, and monitor macronutrients with the Nutrition screen. Set dietary goals, track daily intake, and see how your nutrition supports your fitness targets.
+
+📊 Progress Analytics
+The Progress screen visualises your improvement over time with charts, streak tracking, and milestone celebrations. Watch your strength, endurance, and consistency grow week by week.
+
+👥 Fitness Community
+Join the Social Feed to share achievements, encourage others, and stay accountable. Visibility controls let you decide what to share. Report or block users who don't respect community standards.
+
+━━ ALSO INCLUDED ━━
+
+• 7-day streak tracking with weekly highlights
+• Quick-action shortcuts to every feature
+• Full Material Design 3 UI optimised for Android
+• Works offline for workout viewing and logging
+
+━━ IMPORTANT DISCLAIMER ━━
+
+FitFlow is a general wellness and fitness application. All AI-generated workout and nutrition recommendations are for informational purposes only and do not constitute medical advice. Always consult a qualified healthcare professional before starting a new exercise programme, especially if you have a pre-existing medical condition.
+
+━━ PRIVACY ━━
+
+We take your privacy seriously. Your fitness and health data is encrypted in transit and at rest and is never sold to third parties. Read our full Privacy Policy at:
+https://dewdunuchathura.github.io/FitflowRedesigned/privacy-policy.html
+
+━━ COMPATIBILITY ━━
+
+• Requires Android 7.0 (API 24) or higher
+• Optimised for phones and tablets

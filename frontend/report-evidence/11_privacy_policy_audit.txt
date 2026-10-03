@@ -1,0 +1,24 @@
+=== Privacy Policy Audit ===
+
+--- docs/ folder ---
+ADR-001-technology-stack.md
+activity-01-frontend-comparison.md
+activity-02-backend-database-auth.md
+activity-03-decision-matrix.md
+activity-04-architecture.md
+activity-05-github-repository.md
+architecture
+
+--- privacy-policy.html ---
+DOES NOT EXIST
+
+--- url_launcher in pubspec ---
+NOT in pubspec.yaml
+
+--- url_launcher / privacy policy in lib/ ---
+No references found in lib/
+
+--- GitHub remote ---
+https://github.com/dewdunuchathura/FitflowRedesigned.git
+
+GitHub Pages URL would be: https://dewdunuchathura.github.io/FitflowRedesigned/privacy-policy.html

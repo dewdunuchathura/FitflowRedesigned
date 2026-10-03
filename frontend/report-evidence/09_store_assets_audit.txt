@@ -1,0 +1,22 @@
+=== Store Assets Audit ===
+
+--- Launcher Icon files (mipmap-*) ---
+mipmap-hdpi: ic_launcher.png 
+mipmap-mdpi: ic_launcher.png 
+mipmap-xhdpi: ic_launcher.png 
+mipmap-xxhdpi: ic_launcher.png 
+mipmap-xxxhdpi: ic_launcher.png 
+
+--- flutter_launcher_icons in pubspec.yaml ---
+NOT CONFIGURED
+
+--- store-assets folder ---
+DOES NOT EXIST
+
+--- Dart screens in lib/ ---
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/auth/login_screen.dart
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/nutrition/nutrition_screen.dart
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/social/social_feed_screen.dart
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/workout/ai_workout_screen.dart
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/workout/home_screen.dart
+d:/FITFLOW ASSIGNMENT/FitflowRedesigned/frontend/lib/features/workout/progress_screen.dart

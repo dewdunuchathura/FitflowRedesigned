@@ -1,0 +1,22 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/C:/Users/User/AppData/Local/Android/Sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=FitFlow App, OU=Mobile Development, O=FitFlow, L=Colombo, ST=Western Province, C=LK
+Signer #1 certificate SHA-256 digest: fb0c5680c421c1c5aa308605cc7936e8341bfc1ecd6f64c2b9e89f9ef956501e
+Signer #1 certificate SHA-1 digest: 6833df058bd23fa507143a687d2e7fe3e3871aef
+Signer #1 certificate MD5 digest: f2dd8319ca3d7b9402e051d4c7c7788f
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 6407bf4a24f8adcbd5b5b5216b53fda24e619a1a2be51aafc5d9c79c964544e3
+Signer #1 public key SHA-1 digest: 08279572f8bb91735eb8ad38f5b1b23f48cb98bd
+Signer #1 public key MD5 digest: f2695fa4b80dfa272208c0a1f86f3e3c

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fitflow/shared/theme/app_theme.dart';
 import 'package:fitflow/shared/widgets/stat_card.dart';
 import 'package:fitflow/shared/widgets/section_title.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatelessWidget {
   final void Function(int index) onNavigate;
@@ -26,6 +27,8 @@ class HomeScreen extends StatelessWidget {
               _QuickActions(onNavigate: onNavigate),
               const SizedBox(height: AppTheme.spacingLG),
               _StreakCard(),
+              const SizedBox(height: AppTheme.spacingMD),
+              const _PrivacyPolicyLink(),
               const SizedBox(height: AppTheme.spacingMD),
             ],
           ),
@@ -336,6 +339,42 @@ class _QuickActionButton extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// ── Privacy Policy Link ───────────────────────────────────────────────────────
+
+class _PrivacyPolicyLink extends StatelessWidget {
+  static const _url =
+      'https://dewdunuchathura.github.io/FitflowRedesigned/privacy-policy.html';
+
+  const _PrivacyPolicyLink();
+
+  Future<void> _open() async {
+    final uri = Uri.parse(_url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: TextButton.icon(
+        onPressed: _open,
+        icon: const Icon(Icons.shield_outlined, size: 16,
+            color: AppTheme.textMedium),
+        label: const Text(
+          'Privacy Policy',
+          style: TextStyle(fontSize: 13, color: AppTheme.textMedium),
+        ),
+        style: TextButton.styleFrom(
+          foregroundColor: AppTheme.textMedium,
+          padding: const EdgeInsets.symmetric(
+              horizontal: AppTheme.spacingMD, vertical: AppTheme.spacingSM),
+        ),
       ),
     );
   }

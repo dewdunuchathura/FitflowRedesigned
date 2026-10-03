@@ -4,7 +4,7 @@ description: "FitFlow – Cross-platform fitness app built with Flutter."
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.1+2
+version: 1.0.1+4
 
 environment:
   sdk: ^3.13.4
@@ -18,13 +18,27 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # Opens URLs (privacy policy, etc.) in the external browser.
+  url_launcher: ^6.3.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-
   flutter_lints: ^6.0.0
+
+  # Generates launcher icons from a single source PNG.
+  flutter_launcher_icons: ^0.14.3
+
+# ── Launcher icon generation ───────────────────────────────────────────────────
+# Run:  dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  adaptive_icon_background: "#1B5775"
+  min_sdk_android: 21
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -32,7 +46,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
- 
   uses-material-design: true
 
- 
+  assets:
+    - assets/icon/

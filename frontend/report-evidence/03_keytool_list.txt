@@ -1,0 +1,26 @@
+Alias name: fitflow
+Creation date: Sep 30, 2026
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=FitFlow App, OU=Mobile Development, O=FitFlow, L=Colombo, ST=Western Province, C=LK
+Issuer: CN=FitFlow App, OU=Mobile Development, O=FitFlow, L=Colombo, ST=Western Province, C=LK
+Serial number: c1cb15cad46f5572
+Valid from: Wed Sep 30 12:15:38 IST 2026 until: Sun Feb 15 12:15:38 IST 2054
+Certificate fingerprints:
+	 SHA1: 68:33:DF:05:8B:D2:3F:A5:07:14:3A:68:7D:2E:7F:E3:E3:87:1A:EF
+	 SHA256: FB:0C:56:80:C4:21:C1:C5:AA:30:86:05:CC:79:36:E8:34:1B:FC:1E:CD:6F:64:C2:B9:E8:9F:9E:F9:56:50:1E
+Signature algorithm name: SHA384withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 83 44 9F 53 2F 24 C2 1D   82 40 73 FF 52 85 8E 7F  .D.S/$...@s.R...
+0010: 00 6B DF AC                                        .k..
+]
+]
+
